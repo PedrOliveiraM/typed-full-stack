@@ -1,0 +1,38 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Project back-end ",
+  "main": "index.ts",
+  "scripts": {
+    "test": "npm run test",
+    "dev": "tsx watch server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PedrOliveiraM/typed-full-stack.git"
+  },
+  "keywords": [
+    "node",
+    "typed-api",
+    "react"
+  ],
+  "author": "Pedro Monteiro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PedrOliveiraM/typed-full-stack/issues"
+  },
+  "homepage": "https://github.com/PedrOliveiraM/typed-full-stack#readme",
+  "dependencies": {
+    "@fastify/cors": "^10.0.1",
+    "@fastify/swagger": "^9.4.0",
+    "@fastify/swagger-ui": "^5.1.0",
+    "fastify": "^5.1.0",
+    "fastify-type-provider-zod": "^4.0.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
