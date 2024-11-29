@@ -10,7 +10,6 @@ interface User {
 const users: User[] = []
 
 export const routes: FastifyPluginAsyncZod = async (app) => {
-
   app.post("/users", {
     schema: {
       tags: ['users'],
@@ -30,8 +29,6 @@ export const routes: FastifyPluginAsyncZod = async (app) => {
       name,
     })
   })
-
-
 
   app.get("/users", {
     schema: {
