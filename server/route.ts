@@ -19,7 +19,7 @@ export const routes: FastifyPluginAsyncZod = async (app) => {
         name: z.string()
       }),
       response: {
-        201: z.null()
+        201: z.object({})
       },
     }
   }, async (request, reply) => {
@@ -29,13 +29,15 @@ export const routes: FastifyPluginAsyncZod = async (app) => {
       id: randomUUID(),
       name,
     })
+
+    return reply.status(201).send({})
   })
 
   app.get("/users", {
     schema: {
       tags: ['users'],
-      description: 'List users.',
-      operationId: 'listUsers',
+      description: 'Get users.',
+      operationId: 'getUsers',
       response: {
         200: z.array(
           z.object({

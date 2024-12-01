@@ -48,3 +48,14 @@ export default tseslint.config({
   },
 })
 ```
+# Orval 
+Um rest full client generator, tipando as rotas com o front
+
+# Instalando o Orval
+npm i orval -D
+
+# adicionar o scripr 
+"generate:api" : "orval"
+
+# criar arquivo de config 
+./orval.config.js

@@ -40,10 +40,9 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "enum": [
-                    "null"
-                  ],
-                  "nullable": true
+                  "type": "object",
+                  "properties": {},
+                  "additionalProperties": false
                 }
               }
             }
@@ -51,11 +50,11 @@
         }
       },
       "get": {
-        "operationId": "listUsers",
+        "operationId": "getUsers",
         "tags": [
           "users"
         ],
-        "description": "List users.",
+        "description": "Get users.",
         "responses": {
           "200": {
             "description": "Default Response",
