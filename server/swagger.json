@@ -10,6 +10,7 @@
   "paths": {
     "/users": {
       "post": {
+        "operationId": "createUser",
         "tags": [
           "users"
         ],
@@ -50,6 +51,7 @@
         }
       },
       "get": {
+        "operationId": "listUsers",
         "tags": [
           "users"
         ],
@@ -86,6 +88,7 @@
     },
     "/users/{id}": {
       "get": {
+        "operationId": "getUserById",
         "tags": [
           "users"
         ],
